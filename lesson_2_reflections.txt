@@ -10,14 +10,20 @@ What value do you think it offers?
 
 How can you use the staging area to make sure you have one commit per logical
 change?
+	By using the 'git status' command to see what files are changed, and by using variations of git diff to determine changes between working directory, staging area, and previous commits.
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
+	You could have a version for testing purposes, or an adaptation for a customer on an older version. By having branches, you can make the changes there without affecting more recent code.
 
 How do the diagrams help you visualize the branch structure?
+	Yes. The labels help show where each branch is and the parent structure shows the relationship from one commit to the other. Also gives reason for why certain commits are not reachable.
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
+	We should have code that reflects the changes made by both branches, made into the branch that was currently checked out. This should be main. We represent the arrows coming back together to show that the code branches are now joined and we don't need to keep track of the separate branches anymore, since both are now represented. However, if we did still need to make a change to a branch, we would want to keep the branch label around for later use. (Or could reapply a label afterwards to one of the commits on the previous branch, as long as we recognize which branch is which, but this may be confusing and error-prone)
 
 What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
+
+	Automatic merging does not give the same level of control, but it is faster, and is possible for Git not to understand the code and introduce an error. Manual merging gives you complete control, but is slower, has some possible errors in editing, but lets you see the logic of the code.
