@@ -1,0 +1,40 @@
+How did viewing a diff between two versions of a file help you see the bug that was introduced?
+
+	It allowed me to pinpoint exactly which lines were changed, since the bug was most likely to be newly introduced.
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+	You could know when the changes were made, who made them, what project was going on at the time. You can follow the chain of changes and deduce a logical pattern for the changes instead of being isolated to each individual change. You can see when new features were added or removed. And you can do this all at a glance which will save you a lot of time.
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+	You have control over what exactly is being changed. You can be assured
+	that the changes are logically consistent, and not committed in the middle
+	of a change which will make figuring out what was being done very difficult.
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+	Logical changes often span multiple files. For this reason, we must be able to 
+	make atomic changes to multiple files to preserve the correctness of our changes.
+
+How can you use the commands git log and git diff to view the history of files?
+
+	Use log to find where the change was made, and then git diff to find a change between two
+	commits. It doesn't have to be the very last commit, as you may want to find where a 
+	particular change was made through binary search or some other means. Say for example, you
+	know the game pad controllers were added sometime before the new colors were introduced but
+	you are not sure exactly when.
+
+How might using version control make you more confident to make changes that
+could break something?
+
+	Because as long as I have history, I can go back to something that works.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+	Collaborative work, showing my work for resume, and then backing up code for my workplace which
+	doesn't use source control.
