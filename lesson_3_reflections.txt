@@ -7,24 +7,24 @@ local?
 Why might you want to always pull changes manually rather than having Git
 automatically stay up-to-date with your remote repository?
 
-    Fill in your answer here
+    Because you want to work with the most up-to-date copy in case someone else has created a critical change. The second reason is that you don't want to have changes that would break your code every time someone else makes a change: your feature needs to work properly, and then you resolve any differences.
 
 Describe the differences between forks, clones, and branches.  When would you
 use one instead of another?
 
-    Fill in your answer here
+    Fork is a command to let you take a copy of a repository on GitHub and create your own repository based on it. Clone lets you take a copy of a repository and make a local version of it. You can clone without working a repository. What this may mean is that you just want to work with code locally but do not have any need to save your changes back on GitHub. Finally, a branch is a way of segementing a repository into different logical paths(say for a one-off, a work in progress not ready to be shared, or different versions of your code), or of labeling your work for various purposes.
 
 What is the benefit of having a copy of the last known state of the remote
 stored locally?
 
-    Fill in your answer here
+    This allows you to know where you are with respect to any other versions of the repository, and be able to track when to do merges, and how to sync up your local repository with remotes.
 
 How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
 
-    Fill in your answer here
+    You could colloborate through other version control systems, but only if they are distributed, and people have access to them. You could send zip files, file shares, or some other online version control. GitHub is easier since more people know it, and you'll find more people to collaborate, and although it can be complex, it is the same wherever you go. For simple projects, GitHub is more difficult, since if are making a custom component, for one customer, for example, you could just send the component, and you don't need to learn how Git/GitHub work.
 
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
 
-    Fill in your answer here
+    You would like to work in a separate branch when you have production-level code in master. This allows you to make changes that you can work on, have them reviewed by the responsible party, and then approved for production, or even something in between like QA. The benefit is security and collaboration. Working directly in master means that the process is much simpler and quicker, but doesn't offer some of the code security and checks and balances.
